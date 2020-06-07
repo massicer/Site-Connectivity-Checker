@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+src/*.egg-info
+pytest.ini
+.pytest_cache/
+
+# Test
+.coverage
+.coverage.*
