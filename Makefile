@@ -12,3 +12,6 @@ lint: ## lint code
 
 fix-lint: ## lint code
 	poetry run black src tests
+
+upload-coverage: ## lint code
+	codecov
