@@ -5,9 +5,15 @@ install:
   - pip install poetry
   - make install-dev
 
+stages:
+- lint
+- test
+
 jobs:
     include:
         - stage: lint
           script: make lint
         - stage: test
-          script: make test
+          script: 
+            - make test
+            - make upload-coverage
