@@ -7,11 +7,14 @@ authors = ["Massimiliano Ceriani <massimilianoceriani08@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 pytest-cov = "^2.9"
+Click = "^7.1"
+pydantic = "^1.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
 black = {version = "^18.3-alpha.0", allows-prereleases = true}
 codecov = "^2.1"
+flake8 = "^3.8"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
