@@ -1,0 +1,2 @@
+class ServiceNotAvailableException(Exception):
+    pass
