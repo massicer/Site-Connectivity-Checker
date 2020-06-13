@@ -37,5 +37,7 @@ class Checker:
         ]
         results = await asyncio.gather(*tasks, return_exceptions=False)
 
+        self.logger.info(f"Request performed, results = {results}")
+
         for i in results:
             service_is_available.is_status_code_response_successful(status_code=i)
